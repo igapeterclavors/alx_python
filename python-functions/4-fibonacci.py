@@ -19,8 +19,3 @@ def fibonacci_sequence(n):
         y = allTotal
         n -=1
     return series
-
-print(fibonacci_sequence(6))
-print(fibonacci_sequence(1))
-print(fibonacci_sequence(0))
-print(fibonacci_sequence(20))
