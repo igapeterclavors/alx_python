@@ -3,7 +3,7 @@ Write a program that imports the function def add(a, b):
 from the file add_0.py and prints the result of the addition 1 + 2 = 3 
 """
 
-# importing add module from add_0
+# importing add module
 from add_0 import add
 
 # defining function my_add to add two numbers
