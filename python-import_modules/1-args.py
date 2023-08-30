@@ -1,26 +1,47 @@
 """
 Write a program that prints the number of and the list of its arguments.
 """
-import sys
-
 def my_arguments():
-    n = len(sys.argv[1:])
+    if __name__ == '__main__':
 
-    if n == 0:
-        print("0 arguments:")
+        import sys
 
-    elif n == 1:
-        print("{} argument:".format(n))
+        argument = len(sys.argv)
+        if argument == 1:
+            print("0 arguments.")
 
-        for i in range(1, len(sys.argv)):
+        elif argument == 2:
+            print("1 argument:")
+            print("1: {}".format(sys.argv[1]))
             
-            print("{}: {}".format(i, sys.argv[i]))
-    else:
-        print("{} arguments:".format(n))
+        else:
+            print("{} arguments:".format(argument - 1))
+            for i in range(1, argument):
+                print("{}: {}".format(i, sys.argv[i]))
 
-        for i in range(1, len(sys.argv)):
 
-            print("{}: {}".format(i, sys.argv[i]))
 
-if __name__ == "__main__":
-    my_arguments()
+
+# import sys
+
+# def my_arguments():
+#     n = len(sys.argv[1:])
+
+#     if n == 0:
+#         print("0 arguments:")
+
+#     elif n == 1:
+#         print("{} arguments:".format(n))
+
+#         for i in range(1, len(sys.argv)):
+            
+#             print("{}: {}".format(i, sys.argv[i]))
+#     else:
+#         print("{} arguments:".format(n))
+
+#         for i in range(1, len(sys.argv)):
+
+#             print("{}: {}".format(i, sys.argv[i]))
+
+# if __name__ == "__main__":
+#     my_arguments()
