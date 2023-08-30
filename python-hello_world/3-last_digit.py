@@ -33,4 +33,3 @@ else:
         
     elif (number % 10) < 6:
         print("Last digit of {0} is {1} and is less than 6 and not 0".format(number, (number % 10)))
-
